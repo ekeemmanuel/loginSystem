@@ -1,0 +1,12 @@
+h3{
+    font: green; font-size: 25pt;
+}
+
+#loginBox{
+    background-color: aqua;
+    font-style: oblique;
+}
+
+a{
+    text-underline: none;
+}

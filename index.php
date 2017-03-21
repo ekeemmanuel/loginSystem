@@ -1,18 +1,26 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: Eke
- * Date: 21/03/2017
- * Time: 22:46
- */
-?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>PHP Login Form without Session</title>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
 </head>
-<body>
 
+<body>
+    <h1>PHP Login form with Session</h1>
+    <div class="loginBox">
+        <h3>Login Form</h3>
+        <br><br>
+        <form method="post" action="login.php">
+            <label>Username:</label><br>
+            <input type="text" name="username" placeholder="username"/><br><br>
+            <label>Password</label><br>
+            <input type="password" name="password" placeholder="password"/><br><br>
+            <input type="submit" name="submit" value="login"/>
+        </form>
+    <div class="error"><?php //echo $error;?><?php//echo $username; echo $password; ?></div>
+
+    </div>
 </body>
 </html>
