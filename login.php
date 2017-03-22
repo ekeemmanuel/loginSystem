@@ -1,5 +1,5 @@
 <?php
-include (connectionScript.php);
+include ("connectionScript.php");
 
 if (empty ($_POST["username"]) || empty ($_POST["password"]))
 {
@@ -11,7 +11,7 @@ if (empty ($_POST["username"]) || empty ($_POST["password"]))
 
     $sql="SELECT uid FROM users WHERE 'username'='$username' and 'password'='$password'";
 
-    $result=mysqli_query($db,$sql);
+    $result=mysqli_query($link,$sql);
 
 if (mysqli_num_rows($result) ==1)
 {
