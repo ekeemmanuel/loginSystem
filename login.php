@@ -9,11 +9,8 @@ if (empty ($_POST["username"]) || empty ($_POST["password"]))
     $username=$_POST["username"];
     $password=$_POST["password"];
 
-    //$sql="SELECT uid FROM users WHERE 'username'='$username' and 'password'='$password'";
-    //$sql="SELECT uid FROM users WHERE username='{$username}' and password='{$password}'";
-    $sql_query = "SELECT uid FROM users WHERE username='$username' and password='$password' ; ";
-    //$result=mysqli_query($link,$sql);
-    $result = mysqli_query($link, $sql_query);
+    $sql="SELECT uid FROM users WHERE username='{$username}' and password='{$password}'";
+    $result=mysqli_query($link,$sql);
 
 if (mysqli_num_rows($result) ==1)
 {
