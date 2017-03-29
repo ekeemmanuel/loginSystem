@@ -24,7 +24,7 @@ if (empty ($_POST["username"]) || empty ($_POST["password"])) {
         //echo "Result set has {$rowcount} rows";
     }
 
-    if ($result == 1) {
+    if ($rowcount == 1) {
         header("location: home.php");
     } else {
         echo "Incorrect username or password.";
