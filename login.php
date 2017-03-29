@@ -12,13 +12,12 @@ if (empty ($_POST["username"]) || empty ($_POST["password"])) {
     $username = $_POST["username"];
     $password = $_POST["password"];
 
-    echo "<p>Username is {$username} and password is {$password}";
+    echo "<p>Username is {$username} and password is {$password}</p>";
 
     $sql = "SELECT * FROM users WHERE username='".$username."' and password='".$password."'";
 
-
     if ($result = mysqli_query($link, $sql)) {
-        // Return the number of rows in result set
+
         $rowcount = mysqli_num_rows($result);
         echo "Result set has {$rowcount} rows";
     }
