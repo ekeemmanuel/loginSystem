@@ -12,20 +12,22 @@ if (empty ($_POST["username"]) || empty ($_POST["password"])) {
     $username = $_POST["username"];
     $password = $_POST["password"];
 
-    echo "<p>Username is {$username} and password is {$password}</p>";
+    //Error check to see that username and password are being passed through.
+    //echo "<p>Username is {$username} and password is {$password}</p>";
 
     $sql = "SELECT * FROM users WHERE username='".$username."' and password='".$password."'";
 
     if ($result = mysqli_query($link, $sql)) {
 
         $rowcount = mysqli_num_rows($result);
-        echo "Result set has {$rowcount} rows";
+        //Error check to see that the number of rows is being counted.
+        //echo "Result set has {$rowcount} rows";
     }
 
-    /*if (mysqli_num_rows($result) == 1) {
+    if ($result == 1) {
         header("location: home.php");
     } else {
         echo "Incorrect username or password.";
-    }*/
+    }
 }
 ?>
