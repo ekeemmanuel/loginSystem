@@ -1,5 +1,12 @@
+h1{
+    color-rendering: green; font-size: 25pt;
+}
+h2{
+    color: blueviolet; font-size: 25pt;
+}
 h3{
-    font: green; font-size: 25pt;
+    font-size: 25pt;
+    font-style: italic;
 }
 
 #loginBox{
