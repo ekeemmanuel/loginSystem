@@ -9,7 +9,7 @@
         <main>
             <section> <h2>Work History</h2> </section>
             <section> <h2>Education</h2> </section>
-            <br><br><br>Party's over, time to go  <a href="index.php">home.</a><br>
+            <br><br><br>Party's over, it's time to go  <a href="index.php">home.</a><br>
         </main>
     <footer> <p>Last Updated 19/9/2016</p> </footer>
 </body>
